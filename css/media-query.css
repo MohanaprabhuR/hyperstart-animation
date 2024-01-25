@@ -1,0 +1,1033 @@
+@media print {
+
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+        http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " ("attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 100%;
+    }
+
+    .hero-wrapper figure {
+        margin: 0;
+
+    }
+
+    .hero-wrapper figure::before {
+        left: -32px;
+    }
+
+    .hero-wrapper figure::after {
+        right: -2rem;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    .nav-dropdown:hover .sub-menu {
+        right: 16px;
+    }
+
+
+    .hero-wrapper figure::after,
+    .hero-wrapper figure::before {
+        display: none;
+    }
+
+    /* Hero-Section */
+    .hero-section {
+        padding-top: 8rem;
+    }
+
+    .hero-info .btn {
+        margin-top: 1.75rem;
+    }
+
+    .hero-wrapper {
+        margin: 4.625rem 0 0;
+    }
+
+    .section-contract-managemnent {
+        padding: 7.5rem 0;
+    }
+
+    .list-clouser-times figure {
+        width: 59%;
+    }
+
+    .card-list-wrapper .card-list-items ul li {
+        width: 42%;
+    }
+
+    .card-list-items .d-flex {
+        justify-content: space-between;
+    }
+
+    .process-tools .card-list-wrapper figure {
+        height: 150px;
+    }
+
+    .process-tools .card-list-wrapper h6 {
+        margin-top: 2.75rem;
+    }
+
+    .section-one-platform {
+        padding: 7.5rem 0 6.25rem 0;
+    }
+
+    .embla--thumb .embla__container .embla-thumbs__slide {
+        padding-right: 2.5rem;
+    }
+
+    .embla--thumb .embla__container .embla-thumbs__slide::after {
+        width: 30px;
+        right: 4px;
+    }
+
+    .section-hyperstart-clm {
+        padding: 7.5rem 0;
+    }
+
+    .footer-links {
+        max-width: 71%;
+        padding-left: 15px;
+    }
+
+    .list-info h6 {
+        margin-top: 2.5rem;
+    }
+
+    .list-clouser-times.list-info h6 {
+        margin-top: 0;
+    }
+
+    .card-list-wrapper .card-list-items {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 95%;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .hero-section {
+        padding: 8rem 0 1rem 0;
+        overflow: hidden;
+    }
+
+    .hero-wrapper figure {
+        min-width: 778px;
+    }
+
+
+
+    .process-info-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .process-info-wrapper .process-list {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .process-info-wrapper .process-tools {
+        margin: 3rem auto 0 auto;
+        max-width: 45%;
+        padding-left: 0;
+    }
+
+    .process-info-wrapper {
+        padding-top: 3.5rem;
+    }
+
+    .process-tools .card-list-wrapper figure {
+        height: auto;
+    }
+
+    .section-one-platform {
+        padding: 6.25rem 0;
+    }
+
+    .number-list-info p {
+        font-size: 18px;
+    }
+
+    .section-hyperstart-clm {
+        padding: 6.5rem 0;
+    }
+
+    .section-hyperstart-clm .card-wrapper {
+        padding-top: 3.5rem;
+    }
+
+    .card-list-wrapper {
+        padding: 1.25rem;
+    }
+
+    .card-wrapper .card-list-wrapper {
+        margin: 0 10px;
+    }
+
+    .card-wrapper .card-list-wrapper:first-child {
+        margin: 0 10px 0 0;
+    }
+
+    .card-wrapper .card-list-wrapper:last-child {
+        margin: 0 0 0 10px;
+    }
+
+    .rated-info-img figure {
+        margin-top: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .top-rated-g2 {
+        padding: 2rem 2.25rem 0 2rem;
+    }
+
+    .g2-info {
+        padding-top: 2rem;
+    }
+
+    .grade-logo-list figure {
+        padding: 0 26px;
+    }
+
+    .grade-logo-list figure img {
+        width: 85%;
+    }
+
+    .grade-logo {
+        padding: 3rem 1.25rem 0 1.25rem;
+    }
+
+    .grade-logo-list {
+        padding: 2.5rem 0 3rem 0;
+    }
+
+    .seamless-integration-info h2 {
+        line-height: 50px;
+    }
+
+    .section-hyperstart-today {
+        padding: 6.75rem 0;
+    }
+
+    .hyperstart-today-list {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .hyperstart-today-list .w-50 {
+        max-width: 100%;
+    }
+
+    .hyperstart-today-list .subscribe-later {
+        margin: 0 auto 3rem auto;
+        max-width: 50%;
+    }
+
+    .hyperstart-today-list {
+        padding-top: 3.5rem;
+    }
+
+    .section-seamless-integration {
+        overflow: hidden;
+    }
+
+    .section-faq {
+        background-color: #F0EFF2;
+        padding: 5.5rem 0;
+    }
+
+    .section-faq .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .faq-info {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .faq-list {
+        max-width: 100%;
+        padding: 3rem 0 0 0;
+
+    }
+
+    .faq-info h2,
+    .faq-info {
+        text-align: center;
+    }
+
+    .embla__slide .embla__slide_info {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .embla-slide-title {
+        width: 60%;
+    }
+
+    .embla__container {
+        justify-content: flex-start;
+    }
+
+    .list-info h6 {
+        margin-top: 2rem;
+    }
+
+    .logo-star {
+        width: 110px;
+        height: 110px;
+    }
+
+    .logo-bg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-bg::after {
+        width: 26px;
+        height: 26px;
+    }
+
+    .logo-circle-list {
+        height: 350px;
+
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    html {
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 3.75rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+        line-height: 40px;
+    }
+
+    .container {
+        max-width: 100%;
+        width: auto;
+        padding: 0 1.25rem;
+    }
+
+    .section-spacing {
+        padding: 5rem 0
+    }
+
+    .hero-wrapper figure {
+        min-width: 778px;
+    }
+
+    .section-logo {
+        padding: 9rem 0 4.625rem 0;
+    }
+
+    .hero-wrapper {
+        margin: 3.75rem 0 0;
+    }
+
+
+
+    .contract-management-info h2 {
+        max-width: 100%;
+    }
+
+    .process-info-wrapper {
+        padding-top: 2.5rem;
+    }
+
+    .card-list-wrapper .card-list-items ul li {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .list-clouser-times figure {
+        width: 56%;
+    }
+
+    .list-info h6 {
+        font-size: 1.25rem;
+    }
+
+    .process-info-wrapper .process-tools {
+        max-width: 55%;
+    }
+
+    .section-hyperstart-clm .card-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-hyperstart-clm .clm-card-wrapper .card-list-wrapper {
+        width: 39%;
+        margin: 3.5rem 10px 0 10px;
+    }
+
+    .section-hyperstart-clm .card-wrapper {
+        padding-top: 0;
+    }
+
+    .top-rated-g2 {
+        flex-wrap: wrap;
+    }
+
+    .top-ratd-info p {
+        padding-top: 12px;
+    }
+
+    .rated-info-img figure {
+        margin: 2.25rem auto 0 auto;
+        max-width: 408px;
+    }
+
+    .rated-info-img {
+        width: 100%;
+    }
+
+    .grade-logo-list {
+        overflow: scroll;
+        padding: 2.5rem 0 3rem 0;
+    }
+
+    .grade-logo-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-seamless-integration .d-flex {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+    }
+
+    .seamless-integration-info {
+        max-width: 100%;
+        padding: 3rem 0 0 0;
+    }
+
+    .integration-group-image {
+        padding: 0;
+    }
+
+    .seamless-integration-info h2 {
+        line-height: 43px;
+    }
+
+    .hyperstart-today-list .subscribe-later {
+        max-width: 100%;
+    }
+
+    .hyperstart-today-list .card-list-wrapper {
+        padding: 1.75rem 3.25rem 1.625rem 5rem;
+        margin: 0 0 1.875rem 0;
+    }
+
+    .hyperstart-today-list .card-list-wrapper::before {
+        left: 16px;
+    }
+
+    .footer-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .social-links {
+        padding-top: 3rem;
+    }
+
+    .footer-links {
+        padding: 3rem 0 0 0;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .footer-list-item {
+        max-width: 100%;
+        margin: 0;
+        padding: 1.25rem 1.25rem 0 1.25rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .footer-list-item:last-child {
+        border-bottom: none;
+    }
+
+    .footer-wrapper {
+        padding-bottom: 3rem;
+    }
+
+    .site-footer {
+        padding: 5rem 0;
+    }
+
+    .embla--thumb .embla__container .embla-thumbs__slide::after {
+        width: 25px;
+        right: 4px;
+    }
+
+    .grade-logo-list figure {
+        padding: 0 20px;
+    }
+
+    .site-footer .container {
+        padding: 0;
+    }
+
+    .footer-social-links {
+        padding: 0 1.25rem;
+        width: 100%;
+    }
+
+    .footer-text {
+        height: 0;
+        opacity: 0;
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+    }
+
+    .footer-list-item h5 {
+        cursor: pointer;
+        position: relative;
+        padding-bottom: 1.25rem;
+        position: relative;
+    }
+
+    .footer-list-item h5::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        right: 0;
+        top: 2px;
+        background-image: url("../images/svg/icon-chevron-down.svg");
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+    }
+
+    .footer-list-item .open-list {
+        /* display: block; */
+        height: auto;
+        opacity: 1;
+        padding-bottom: 1.5rem;
+    }
+
+    .footer-list-item h5.rotate::after {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+
+    .footer-list-item ul>li:first-child a {
+        margin-top: 0;
+    }
+
+    .list-info h6 {
+        margin-top: 1.875rem;
+    }
+
+    .integration-group-image {
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 580px) {
+    html {
+        font-size: 85%;
+    }
+
+    h1 {
+        font-size: 2.625rem;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .nav-list li a {
+        padding: 16.5px 0;
+    }
+
+
+    .navbar .barnd-logo {
+        width: 105px;
+        height: 20px;
+    }
+
+    .section-spacing {
+        padding: 4rem 0
+    }
+
+    .hero-info .bg-automated {
+        background-size: contain;
+    }
+
+    .hero-info p {
+        max-width: 100%;
+        padding-top: 1.385rem;
+    }
+
+    .hero-info .btn {
+        margin-top: 1.5rem;
+    }
+
+    .hero-wrapper {
+        margin: 3.25rem 0 0;
+    }
+
+    .section-logo {
+        padding: 8rem 0 4rem 0;
+    }
+
+    .contract-management-info h2>span::after {
+        width: 100px;
+        height: 11px;
+        left: -8px;
+        top: 34%;
+    }
+
+    .list-clouser-times figure {
+        width: 38%;
+    }
+
+    .logo-list a {
+        padding: 0 1.875rem;
+    }
+
+
+
+    .logo-list {
+        padding-top: 2.5rem;
+    }
+
+    .card-list-items li:first-child {
+        margin-top: 1.25rem;
+    }
+
+    .card-list-items li {
+        margin-top: 12px;
+    }
+
+    .card-list-items li {
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .process-list .card-wrapper .card-list-wrapper {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+
+    .process-info-wrapper .process-tools {
+        max-width: 100%;
+        margin: 1.25rem auto 0 auto;
+    }
+
+    .section-hyperstart-clm .clm-card-wrapper .card-list-wrapper {
+        width: 100%;
+        margin: 1.25rem 0 0 0;
+    }
+
+    .rated-info-img figure {
+        max-width: 100%;
+        margin: 3.5rem auto 0 auto;
+    }
+
+    .seamless-integration-info h2 {
+        line-height: 40px;
+    }
+
+    .hyperstart-today-list {
+        padding-top: 3rem;
+    }
+
+    .hyperstart-today-list .card-list-wrapper::before {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        top: 24px;
+    }
+
+    .hyperstart-today-list .card-list-wrapper {
+        padding: 1.5rem 2rem 1.5rem 4rem;
+        margin: 0 0 1.875rem 0;
+    }
+
+    .subscribe-later figure {
+        margin-top: 0;
+    }
+
+    .subscribe-later-info .btn {
+        margin-top: 1.5rem;
+    }
+
+    .embla__slide .embla__slide_info {
+        flex-wrap: wrap;
+    }
+
+    .embla-slide-title {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .embla__slide .embla__slide_info .replaces-icon .icon-list-wrapper .icon-list {
+        width: 38px;
+        height: 38px;
+    }
+
+    .embla__slide .embla__slide_info .replaces-icon .icon-list-wrapper .icon-list figure {
+        width: 60%;
+
+    }
+
+    .embla__slide .embla__slide_info .btn {
+        margin-top: 2rem;
+    }
+
+    .embla__slide .embla__slide_image {
+        margin-top: 1rem;
+        padding: 0 0 0 1.875rem;
+    }
+
+    .embla__slide.embla-slider-store .embla__slide_image {
+        padding-left: 0;
+        margin: 1.875rem -0.5rem -0.5rem -2rem;
+    }
+
+    .embla__slide .embla__slide_info {
+        padding: 1.875rem 1.875rem 0 1.875rem;
+    }
+
+    .carousal {
+        padding: 3.5rem 0;
+    }
+
+    .number-list {
+        flex-wrap: wrap;
+    }
+
+    .number-list-info {
+        width: 100%;
+        padding: 2.5rem 0;
+    }
+
+    .number-list {
+        padding-top: 0;
+    }
+
+    .number-list-info::after {
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: auto;
+    }
+
+    .grade-logo-list {
+        justify-content: flex-start;
+    }
+
+    .grade-logo-list figure>img {
+        width: auto;
+    }
+
+    .integration-group-image {
+        max-width: 300px;
+    }
+
+    .embla--thumb .embla__viewport {
+        padding: 0 10px;
+    }
+
+    .faq-info {
+        max-width: 100%;
+    }
+
+    .faq-list-wrapper h5,
+    .accordion-content li {
+        font-size: 16px;
+    }
+
+    .accordion-content li::before {
+        left: 0;
+    }
+
+    .grade-logo {
+        padding: 2.5rem 1.25rem 0 1.25rem;
+    }
+
+    .g2-info {
+        padding-top: 1.5rem;
+    }
+
+    .number-list-info figure {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-list-image {
+        width: 46px;
+        height: 46px;
+    }
+
+    .section-logo .wrapper::after, .section-logo .wrapper::before {
+        top: 30px;
+        height: 50px;
+        width: 80px;
+    }
+
+    .section-logo .container {
+        padding: 0;
+    }
+
+    .brand-title {
+        padding: 0 1.25rem;
+    }
+
+
+    .logo-star {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-bg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-circle-list {
+        height: 300px;
+    }
+
+    .logo-circle-list {
+        height: 320px;
+    }
+
+    .integration-group-image {
+        max-width: 320px;
+    }
+
+    .logo-gmail::after {
+        right: -2.5rem;
+        top: 6px;
+    }
+
+    .logo-sign::after {
+        bottom: 7px;
+    }
+
+    .logo-salesforce::after {
+        bottom: -2rem;
+        right: 1rem;
+    }
+
+    .logo-word::after {
+        left: 5px;
+        bottom: -2rem;
+    }
+
+    .logo-download::after {
+        bottom: 1rem;
+    }
+
+    .logo-email::after {
+        top: 10px;
+    }
+
+    .logo-share-point::after {
+        right: 6px;
+        top: -2.25rem;
+    }
+
+    .logo-drive::after {
+        top: -2rem;
+    }
+
+    .logo-sign {
+        top: 40px;
+        right: 35px;
+    }
+
+    .logo-share-point {
+        top: 40px;
+        left: 35px;
+    }
+
+    .logo-word {
+        bottom: 33px;
+        right: 35px;
+    }
+
+    .logo-email {
+        bottom: 33px;
+        left: 35px;
+    }
+
+    .logo-download::after {
+        left: -2rem;
+        bottom: 0;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .integration-group-image {
+        max-width: 300px;
+    }
+
+    .logo-circle-list {
+        height: 300px;
+    }
+
+    .logo-star {
+        width: 90px;
+        height: 90px;
+    }
+
+    .logo-bg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo-email::after {
+        top: 0px;
+    }
+
+    .logo-drive::after {
+        top: -2.35rem;
+    }
+
+    .logo-download::after {
+        left: -2.5rem;
+    }
+
+    .logo-salesforce::after {
+        bottom: -2.25rem;
+    }
+
+    .logo-sign::after {
+        bottom: 0px;
+    }
+}
