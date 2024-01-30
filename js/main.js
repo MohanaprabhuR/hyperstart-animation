@@ -92,7 +92,7 @@ $(document).ready(function () {
       setTimeout(function () {
         logos[index].style.opacity = '1';
         logos[index].style.transform = 'scale(1)';
-      }, index * 1000);
+      }, index * 500);
     }
 
     function checkScroll() {
